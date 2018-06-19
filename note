@@ -4,3 +4,17 @@
 mysqldump -h 172.21.32.88 -P 60005 -u cup_dba -pOStem@00 -B hzmgmdb --default-character-set=GBK --set-gtid-purged=OFF > hzmgmdb.sql
 mysql -h 172.21.32.88 -P 60005 -u cup_dba -pOStem@00 --default-character-set=GBK < hzmgmdb.sql
 
+
+
+0x20 hack 
+DNS    (a 65 A 97 ...)
+a and A are 0x20 apart
+
+** Refers to the simplest hack to modify the case of a DNS requests.
+** Requests need to generate a random bitmask, only works if the DNS server does not pay attention to case.
+
+
+
+
+
+
