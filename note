@@ -1,0 +1,6 @@
+/* This part is mysql note */
+
+/* mysql dump a database and copy a database */
+mysqldump -h 172.21.32.88 -P 60005 -u cup_dba -pOStem@00 -B hzmgmdb --default-character-set=GBK --set-gtid-purged=OFF > hzmgmdb.sql
+mysql -h 172.21.32.88 -P 60005 -u cup_dba -pOStem@00 --default-character-set=GBK < hzmgmdb.sql
+
