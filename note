@@ -15,6 +15,12 @@ a and A are 0x20 apart
 
 
 
+/* Post a request to a URL */
+curl -v -H "Content-Type: application/json" -X POST \
+     -d '{"name":"your name","phonenumber":"111-111"}' http://www.abc.com/details
+
+
+
 
 
 
