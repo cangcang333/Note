@@ -21,6 +21,37 @@ curl -v -H "Content-Type: application/json" -X POST \
 
 
 
+/* Wireshark filter expression */
+for example:
+1. IP Address
+ip.src == 192.168.0.1
+ip.sdt == 192.168.0.1
+ip.addr == 192.168.0.1
+ip.src == !(192.168.0.1)
+2. Protocol
+http
+http or telnet
+not arp
+!tcp
+3. Port
+tcp.port == 80
+udp.port >= 2048
+4. Length and Content
+udp.length < 30
+http.content_length <= 20
+http.request.uri.matches "vipscu"
+5. Other complex 
+tcp dst port 3128
+ip src host 10.1.1.1
+host 10.1.2.3
+src portrange 2000-2500
+not icmp
+src host 10.7.2.12 and not dst net 10.200.0.0/16
+src host 10.7.2.12 and not dst net 10.200.0.0/16 and tcp dst portrange 200-10000 and dst net 10.0.0.0/8
+
+
+
+
 
 
 
