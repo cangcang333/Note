@@ -50,7 +50,9 @@ src host 10.7.2.12 and not dst net 10.200.0.0/16
 src host 10.7.2.12 and not dst net 10.200.0.0/16 and tcp dst portrange 200-10000 and dst net 10.0.0.0/8
 
 
-
+/* set vi tab&space */
+set tabstop=4
+setshiftwidth=4
 
 
 
