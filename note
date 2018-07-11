@@ -53,5 +53,19 @@ src host 10.7.2.12 and not dst net 10.200.0.0/16 and tcp dst portrange 200-10000
 
 
 
+/* sed command */
+sed -i '/^ This is for test/d' <filename>
+sed -i.bak '/^ This is for test/d' <filename>
+
+
+
+sed -i '/This is for test/d' <filename>
+
+
+
+
+
+
+
 
 
