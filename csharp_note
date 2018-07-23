@@ -1,0 +1,17 @@
+C# Note
+
+1. reference 
+ref
+
+2.read from input
+Console.ReadLine()
+
+3.Array
+datatype[] arrayName;
+
+4.Enum
+enum <enum_name>
+{
+    <enumeration list>
+};
+
