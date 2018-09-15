@@ -55,5 +55,9 @@ set tabstop=4
 setshiftwidth=4
 
 
+/* Mac shortcut */
+Enter/Exit Full Screen : Control + Command + f
+
+
 
 
