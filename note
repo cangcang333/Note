@@ -67,7 +67,11 @@ sed -i.bak '/^ This is for test/d' <filename>
 sed -i '/This is for test/d' <filename>
 
 
+Search the fxxking web
+Read the fxxking manual
 
+Code Review
+Unit Test
 
 
 
