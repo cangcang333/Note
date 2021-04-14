@@ -1,0 +1,91 @@
+Building Cluster Note
+
+1.
+// Set the root password
+$ sudo passwd root
+
+
+2.
+// mount disk partition(Like D/E/F in windows)
+$ lsblk
+$ sudo mkdir -p /mnt/sdb1  # Create the mount point
+$ sudo mount /dev/sdb1 /mnt/sdb1
+
+3.
+// ssh
+$ sudo apt install openssh-server
+$ systemctl status ssh
+$ systemctl start/stop ssh
+$ systemctl reset-failed ssh
+
+4.
+// installing java
+$ sudo apt-get install default-jdk -y
+
+5.
+// installing maven
+$ sudo apt install maven
+
+6.
+// zookeeper maven build
+$ mvn clean install -DskipTests
+
+7.
+// delete user 'spzhu' password
+$ sudo passwd -d `whoami`
+// add user 'spzhu' password
+$ passwd spzhu
+
+8.
+// fuser
+$ man fuser
+
+* 
+sudo apt install gcc -y
+sudo apt install g++ -y
+
+9. 
+3 Steps to perform SSH login without password
+Step 1: Create public and private keys using ssh-keygen on localhost
+$ ssh-keygen
+Step 2: Copy the public key to remote host using ssh-copy-id
+$ ssh-copy-id -i ~/.ssh/id_rsa.pub spzhu@192.168.2.14
+Step 3: Login to remote host without entering the password
+$ ssh spzhu@192.168.2.14
+
+10.
+$ ./zkServer.sh start/stop/status
+
+11.
+$ ./zkCli.sh
+$ ./zkCli.sh -server 192.168.2.18:2181
+
+12. Check the hardware device
+$ sudo lshw | less
+
+13. install sougou pinyin
+
+$ curl -sL 'https://keyserver.ubuntu.com/pks/lookup?&op=get&search=0x73BC8FBCF5DE40C6ADFCFFFA9C949F2093F565FF' | sudo apt-key add
+$ sudo apt-add-repository 'deb http://archive.ubuntukylin.com/ukui focal main'
+$ sudo apt upgrade
+
+$ sudo apt install sogouimebs
+
+
+14.
+echo $XDG_SESSION_TYPE
+
+15. install google pinyin
+sudo apt-get install fcitx-googlepinyin
+
+16.
+sudo apt-get install moreutils
+
+17.
+sudo apt-get install linux-source -y 
+
+
+Software(Linux version)
+1. WPS
+2. QQ
+
