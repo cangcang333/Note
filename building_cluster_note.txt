@@ -1,5 +1,12 @@
 Building Cluster Note
 
+0. ubuntu chrome start with proxy
+google-chrome --proxy-server="socks5://127.0.0.1:1080" &
+
+shadowsocks-qt5
+https://github.com/slackwarecn-slackbuilds/shadowsocks-qt5
+
+
 1.
 // Set the root password
 $ sudo passwd root
@@ -83,6 +90,10 @@ sudo apt-get install moreutils
 
 17.
 sudo apt-get install linux-source -y 
+
+18.
+串口工具
+sudo comtool &
 
 
 Software(Linux version)
