@@ -1,0 +1,11 @@
+RocksDB
+
+* Merge Operator Implementation
+
+1.
+RocksDB is a versioned key-value store. Every change to the db is globally ordered and assigned a monotonically increasing sequence number.
+
+2.
+Compaction is a process of reducing the history of a key, without affecting any externally observalbe state.
+
+
