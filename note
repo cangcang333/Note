@@ -94,3 +94,20 @@ set termencoding=utf-8
 env | grep LANG
 LANG=zh_CN.UTF-8
 /* 20220217 */
+
+
+
+/* 20220626 */
+
+W: GPG 错误：http://mirrors.163.com/ubuntu trusty-security InRelease: 由于没有公钥，无法验证下列签名： NO_PUBKEY 40976EAF437D05B5 NO_PUBKEY 3B4FE6ACC0B21F32
+E: 仓库 “http://mirrors.163.com/ubuntu trusty-security InRelease” 没有数字签名。
+N: 无法安全地用该源进行更新，所以默认禁用该源。
+N: 参见 apt-secure(8) 手册以了解仓库创建和用户配置方面的细节。
+
+
+SOLUTION:
+
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 40976EAF437D05B5
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3B4FE6ACC0B21F32
+
+/* 20220626 */
